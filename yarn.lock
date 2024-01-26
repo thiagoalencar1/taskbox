@@ -1596,6 +1596,14 @@
   resolved "https://registry.npmjs.org/@sinclair/typebox/-/typebox-0.27.8.tgz"
   integrity sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==
 
+"@storybook/addon-a11y@^7.6.10":
+  version "7.6.10"
+  resolved "https://registry.npmjs.org/@storybook/addon-a11y/-/addon-a11y-7.6.10.tgz"
+  integrity sha512-TP17m4TAWLSSd2x9cWNg7d0MCZZCojYIG83RZMXAb55jt8gKJBMDbupOoDLydBsABQa5Uk9ZP0D/CvumMon8RA==
+  dependencies:
+    "@storybook/addon-highlight" "7.6.10"
+    axe-core "^4.2.0"
+
 "@storybook/addon-actions@7.6.6":
   version "7.6.6"
   resolved "https://registry.npmjs.org/@storybook/addon-actions/-/addon-actions-7.6.6.tgz"
@@ -1670,6 +1678,13 @@
     "@storybook/node-logger" "7.6.6"
     "@storybook/preview-api" "7.6.6"
     ts-dedent "^2.0.0"
+
+"@storybook/addon-highlight@7.6.10":
+  version "7.6.10"
+  resolved "https://registry.npmjs.org/@storybook/addon-highlight/-/addon-highlight-7.6.10.tgz"
+  integrity sha512-dIuS5QmoT1R+gFOcf6CoBa6D9UR5/wHCfPqPRH8dNNcCLtIGSHWQ4v964mS5OCq1Huj7CghmR15lOUk7SaYwUA==
+  dependencies:
+    "@storybook/global" "^5.0.0"
 
 "@storybook/addon-highlight@7.6.6":
   version "7.6.6"
@@ -2867,6 +2882,11 @@ available-typed-arrays@^1.0.5:
   version "1.0.5"
   resolved "https://registry.npmjs.org/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz"
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
+
+axe-core@^4.2.0:
+  version "4.8.3"
+  resolved "https://registry.npmjs.org/axe-core/-/axe-core-4.8.3.tgz"
+  integrity sha512-d5ZQHPSPkF9Tw+yfyDcRoUOc4g/8UloJJe5J8m4L5+c7AtDdjDLRxew/knnI4CxvtdxEUVgWz4x3OIQUIFiMfw==
 
 babel-core@^7.0.0-bridge.0:
   version "7.0.0-bridge.0"
