@@ -46,6 +46,25 @@ const TasksSlice = createSlice({
       };
     },
   },
+
+  extraReducers(builder) {
+    builder
+      .addCase(fetchTasks.pending, (state) => {
+        state.status = 'loading';
+        state.error = null;
+        state.tasks = [];
+      })
+      .addCase(fetchTasks.fulfilled, (state, action) => {
+        state.status = 'succeeded';
+        state.error = null;
+        state.tasks = action.payload;
+      })
+      .addCase(fetchTasks.rejected, (state) => {
+        state.status = 'failed';
+        state.error = "Something went wrong";
+        state.tasks = [];
+      });
+  },  
 });
 
 export const { updateTaskState } = TasksSlice.actions;
