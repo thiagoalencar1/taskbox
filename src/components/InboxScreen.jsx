@@ -1,4 +1,4 @@
-import React, {useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchTasks } from '../lib/store';
 import TaskList from './TaskList';
@@ -6,10 +6,9 @@ import TaskList from './TaskList';
 export default function InboxScreen() {
   const dispatch = useDispatch();
   const { error } = useSelector((state) => state.taskbox);
-
   useEffect(() => {
     dispatch(fetchTasks());
-  }, [])
+  }, []);
 
   if (error) {
     return (
@@ -21,8 +20,7 @@ export default function InboxScreen() {
         </div>
       </div>
     );
-  };
-
+  }
   return (
     <div className="page lists-show">
       <nav>
@@ -31,4 +29,4 @@ export default function InboxScreen() {
       <TaskList />
     </div>
   );
-};
+}
